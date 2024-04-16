@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+    background-color: #00D619;
+    font-family:serif;
+    font-weight: 300;
+}
+h1{
+    color:#002705;
+}
+
+#principal{
+    background-color: #009411;
+    text-align: center;
+}
+
+h2{
+    color:  #009411;
+}
+.basico{
+    color:  #009411
+}
+
+.intermediario{
+    color:  #948a00
+}
+
+.avancado{
+     color:  #940000
+}
+
+/*
+id no html -- # no css (so pode um elemento por pagina html)
+class no html -- . no css (pode varios elementos)
+Posso usar duas classes no mesmo elemento, ou mesclar classe + id.
+*/

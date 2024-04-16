@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/et.ico" type="image/x-icon">
+    <title>Imagens Dinamicas</title>
+</head>
+
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes, ou apenas diminua e aumente a janela do navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p .png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="Imagem G">
+    </picture>
+    <h1>Audio</h1>
+    <p>Vamos aprender aprender a adicionar um audio no site.</p>
+    <audio src="media/Cancun - Topher Mohr and Alex Elena.mp3" controls></audio>
+    <p>Essa e uma maneira de adicionar um arquivo de midia.</p>
+    <p>Vamos fazer de outra forma agora.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/Cancun - Topher Mohr and Alex Elena.mp3" type="audio/mpeg">
+        <!--Para arquivos mp3 o type e audio/mpeg mesmo-->
+        <source src="media/Cancun - Topher Mohr and Alex Elena.ogg" type="audio/ogg">
+        <p>Infelizmente o seu navegador nao consegue reproduzir o arquivo de audio<br>
+            <a href="media/Cancun - Topher Mohr and Alex Elena.mp3" target="_blank" rel="dowload">clique aqui para
+                baixar.</a>
+        </p>
+    </audio>
+</body>
+
+</html>

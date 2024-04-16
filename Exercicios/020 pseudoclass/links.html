@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="et.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        /*
+        #  = ID
+        .  = CLASS
+        :  = PSEUDO CLASSES
+        :: = PSEUDO ELEMENTOS
+        >  = CHILDREN
+        */
+
+
+        body{
+            background-image: linear-gradient(180deg, red, black);
+            background-attachment: fixed;
+        }
+
+        a{
+            color: gold;
+            text-decoration: none;
+            font: italic bold 2em monospace;
+        }
+
+        a:visited{
+            color: black;
+        }
+        
+
+        a:hover{
+            background-image: linear-gradient(0deg, green, bla);
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: blue;
+        }
+
+        .especial{
+            background-image: linear-gradient(180deg, white, black);
+            
+        }
+        .importante::before{
+            content: '♣';
+        }
+
+        .importante::after{
+            content: '♧';
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a class="especial importante" href="https://www.youtube.com/" target="_blank" rel="external">Toutube</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="external" >Instagram</a></li>
+        <li><a class="importante" href="https://www.mercadolivre.com.br/" target="_blank" rel="external">Mercado Livre</a></li>
+    </ul>
+</body>
+</html>

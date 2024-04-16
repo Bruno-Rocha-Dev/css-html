@@ -1,0 +1,99 @@
+ @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Foldit:wght@600&display=swap');
+
+@font-face{
+    font-family: 'Yustine';
+    src: url(fonte/paragrafo/Yustine\ Signature.ttf) format(truetype);
+    }
+
+@font-face{
+    font-family:'spider';
+    src: url(fonte/titulo/spiderweb/SPIDERWEB\ ITALIC\ PERSONAL\ USE.ttf) format(truetype);
+    }
+
+body{
+    background-image: linear-gradient(0deg, #b94e26, #8b6659);
+    background-attachment: fixed;
+    }
+
+h1{
+    font: normal bold 5em 'Yustine', sans-serif; 
+    background-image: linear-gradient(0deg, #D9D4D0 , #8b6659 );
+    text-align: center;
+    }
+
+img{
+    width: 300px;
+    height: 300px;
+    padding: 12.5px;
+    }
+
+div > h2{
+        font-family: "Black Ops One", system-ui;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 25px;
+        background-image: linear-gradient(0deg, #b94e26, #8b6659);
+        }
+      
+div{
+    display: inline-block;
+    background-image: linear-gradient(0deg, white, #b94e26);
+    height: 385px;
+    width: 325px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px;
+    margin-left: 65px;
+    padding: 10px;
+    }
+
+.colorido{
+    display: none;
+    }
+
+a:hover > div > .colorido{
+    display: inline-block;
+    text-align: center;
+    box-shadow: 40px 40px 140px white;
+    }
+
+a:hover > div > img{
+    display: none;
+    }
+
+.discricao{
+    display: inline-block;
+    background-image: linear-gradient(180deg, white, #b94e26);
+    height: 385px;
+    width: 325px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px;
+    margin-left: 65px;
+    padding: 10px;
+    }    
+
+.link{  
+    color: black;
+    text-decoration: none;
+    }
+
+p{  
+    font:1.3em Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-align: justify;
+    }
+
+
+   
+
+
+
+
+
+
+
+
+
