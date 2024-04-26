@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+        }
+
+        .notas{
+            position: sticky;
+            top: 37px;
+        }
+
+        th{
+            font-weight: normal;
+            background-color: rgb(58, 58, 58);
+            color: white;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td{
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        .exatas-humanas{
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+
+        .media{
+            text-align: left;
+        }
+
+        .num{
+            background-color: rgb(58, 58, 58);
+            text-align: center;
+            color: white;
+        }
+
+        .materias{
+            text-align: left;
+        }
+        .area{
+            height: 58px;
+        }
+
+        .disciplinas, .nota2{
+            background-color: aquamarine;
+        }
+          
+    </style>
+</head>
+<body>
+    <table>
+
+        <colgroup>
+            <col class="area">
+            <col class="disciplinas">
+            <col class="nota1">
+            <col class="nota2">
+            <col class="mediaa">
+        </colgroup>
+
+        <caption>Desafio da Tabela</caption>
+
+        <thead>
+
+            <tr>
+                <th rowspan="2" scope="col" class="area">Area</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Media</th>
+            </tr>
+            
+           <tr>
+                <th scope="col" class="notas">Nota 1</th>
+                <th scope="col" class="notas">Nota 2</th>
+           </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <th rowspan="4" class="exatas-humanas" scope="rowgroup">Exatas</th>
+                <td class="materias">Matematica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td class="materias">Fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td class="materias">Quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td class="materias">Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <th colspan="4" class="media" scope="row">Media de Exatas</th>
+                <td class="num">0.0</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2" class="exatas-humanas" scope="rowgroup">Humanas</th>
+                <td class="materias">Historia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            
+            <tr>
+                <td class="materias">Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <th colspan="4"  class="media" scope="row">Media de Humanas</th>
+                <td class="num">0.0</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptas, sint explicabo voluptates dignissimos ea repudiandae consequatur soluta ut nobis corrupti? Officia, ipsa iste dolorum omnis accusamus consequuntur similique. Dolore, autem consequuntur! Eaque, tenetur debitis praesentium omnis odio suscipit nostrum est fuga quidem iusto ex unde ratione possimus sequi doloribus cupiditate earum odit animi quam exercitationem? Tenetur deleniti unde voluptatum ullam nobis itaque consectetur perspiciatis quae dolorem asperiores quos, architecto iure commodi magni dicta vel eum rerum eligendi id accusamus blanditiis repellat. Sit quis iure qui recusandae ipsum provident voluptatibus, necessitatibus, unde, consequatur modi dolores a. Perspiciatis nihil minima molestias laudantium? Quae dignissimos et voluptate doloremque nostrum? Sed modi ullam hic nulla, asperiores labore debitis sunt! Assumenda velit doloremque nisi vero voluptatem laudantium tempore accusantium quia. Incidunt soluta officia rem labore rerum dignissimos quis id, sequi laboriosam cumque molestiae, dicta eaque aliquam error quas illo! Quibusdam laudantium facilis ipsam, mollitia molestiae ea, beatae esse libero voluptate possimus quos velit dolorum voluptates numquam aliquam corporis adipisci. Officia excepturi accusamus quaerat accusantium modi blanditiis nobis cumque, itaque odit. Cumque natus tempora sapiente perferendis repellendus at vel deserunt, eligendi nisi quis hic dicta facilis magni necessitatibus fugiat libero. Commodi amet ab quia at perspiciatis libero officia, saepe numquam eos ad repellendus adipisci vel sed atque ea sit dicta illum veniam. Laborum labore explicabo sequi, maxime ut cupiditate dignissimos officia quisquam quis tenetur voluptatum autem unde repellat quae non sint dolores voluptates sit in laboriosam voluptas! Officiis dicta veniam iure alias aliquam aliquid asperiores numquam ipsum voluptatem non sint fuga ad nobis accusantium facere minima incidunt eveniet minus ipsam ratione necessitatibus, aspernatur, consequatur provident facilis? Temporibus saepe magni nulla soluta nesciunt molestias, ad nihil, porro, ex qui ducimus obcaecati magnam blanditiis animi nostrum dicta ipsam dolor consectetur. Explicabo totam placeat animi maxime quasi quis, qui, repudiandae laboriosam unde blanditiis est ab autem. Distinctio, libero quo totam nulla incidunt ipsa maxime assumenda sint iusto, tempora quidem deserunt, odit praesentium minima? Sint, dolor at consequatur, quos porro, doloremque odit doloribus iure voluptate maiores soluta dolorem architecto quo reprehenderit a quas laborum. At quas labore, neque saepe ipsam eveniet assumenda ab quos. Incidunt beatae reiciendis voluptas, nostrum et, voluptates veritatis iure sapiente sint, repellendus inventore. Numquam laborum voluptas quam praesentium non dolore sunt esse veritatis, suscipit similique dicta nostrum impedit? Laboriosam, eum deleniti velit dolores dolorum maiores. Distinctio aliquid magnam exercitationem dolores laboriosam dolorum itaque, facere dicta eius deserunt hic perspiciatis nisi harum praesentium ducimus! Alias corrupti nihil architecto minima! Illo porro facilis, rerum nobis exercitationem ea adipisci aspernatur doloremque iusto ex excepturi eligendi mollitia, et autem cupiditate accusantium saepe vero sapiente cumque, placeat tenetur quod animi odit. Fuga dolorem sunt similique, aut adipisci perferendis dolores. Voluptatum, quae? Molestiae veritatis vero quibusdam dolorum, vel vitae quia pariatur hic quo corporis consequatur maxime. Iusto in saepe dignissimos earum autem cupiditate iste totam, doloribus delectus neque dolorum impedit, inventore libero similique recusandae blanditiis minus odio amet facilis provident dolor officia nisi ipsum! Minus delectus reiciendis autem eligendi quos, omnis beatae praesentium nisi molestiae nostrum atque nesciunt libero sunt, labore accusamus. Ab, voluptatibus aspernatur quia laborum harum asperiores. Itaque alias quaerat ipsam consequuntur id doloribus, inventore ipsa a, error ducimus quasi incidunt ab eum repellendus illum natus neque consectetur? Ad fuga nemo odit esse! Dolore accusantium libero esse numquam sed! Adipisci cum temporibus natus possimus tempora debitis quibusdam aut, ipsa fugit laborum voluptatem voluptatibus minima unde quasi fuga? Expedita, commodi. Dolorem similique iusto dicta omnis fuga atque at commodi deleniti velit minus dolores dolor officia vitae earum iste sunt numquam fugiat totam consectetur, reiciendis voluptatibus quia incidunt ab. Dicta voluptates amet autem repudiandae esse aliquam sed quia ut! Fuga error molestias, veritatis exercitationem, dolorum odit ipsum, nihil dolorem deleniti aliquid quaerat necessitatibus? Impedit, sed neque ipsa est beatae animi architecto temporibus rerum, deleniti assumenda ipsam, ducimus ad. Labore, adipisci ab repudiandae inventore delectus itaque facilis officiis quisquam aliquam odio laborum enim vero rem beatae non, soluta fugit eveniet minima expedita. Repellendus deserunt voluptates atque obcaecati reprehenderit, quis consequatur, rem possimus unde ipsam iure est distinctio molestiae, pariatur animi laboriosam laudantium magnam saepe eius sit aperiam minus labore eum numquam. Sunt minus earum ipsa et dolorum assumenda eos, ab placeat officia eius molestiae tenetur, esse modi id consequatur repudiandae iure quod? Suscipit consequuntur modi ipsum in rem temporibus ratione perspiciatis autem repellat provident soluta similique eum tempora labore commodi dolor quia, nulla tenetur! Officiis quo veritatis esse quisquam alias fugiat cumque inventore officia aut dignissimos quas in voluptas, vitae quis iste dolor magni sit reiciendis ut aperiam magnam soluta! Voluptatibus similique iure ab ullam nobis ipsam culpa praesentium vitae laboriosam! Nostrum fugiat neque voluptatem expedita odit id modi libero laudantium reiciendis recusandae doloremque earum eum amet beatae natus, explicabo facilis ipsum velit exercitationem animi. Iusto quaerat sint exercitationem nam dolorum delectus sunt nemo iste, amet adipisci, eaque cum ducimus consequuntur facilis a nostrum expedita, ipsam molestiae quis quam quidem eos illum. Hic, rerum? Nihil quae itaque quod quis assumenda. Ipsum ratione voluptas accusantium, quibusdam assumenda amet? Similique blanditiis, illo nostrum esse libero quasi! Eum dolor eligendi assumenda modi blanditiis exercitationem, optio, doloribus ex autem natus architecto esse, mollitia dolorem deleniti. Repellat ad, praesentium reprehenderit beatae assumenda nulla veniam atque eius facilis delectus sunt eveniet pariatur quidem. Nostrum dolorem deleniti laboriosam. Tempora delectus dignissimos, voluptas harum, saepe earum inventore nam porro enim laudantium, doloribus libero voluptatum iusto laborum voluptate in tempore? Ipsam vero cupiditate autem! Dolores voluptas fugit ipsum blanditiis exercitationem aspernatur ut commodi fuga tempore atque provident, molestias corrupti, saepe dolor quae. Sit eveniet ipsam quia, quas molestiae nihil suscipit dolorum saepe fugiat nam ut temporibus molestias laborum aperiam sed soluta iste voluptate nostrum debitis! Molestias dolorum officia obcaecati odio, sequi totam odit fugit debitis culpa et quidem eius expedita sunt non incidunt, nam enim deserunt perspiciatis quaerat ducimus reiciendis? Voluptate voluptatibus dignissimos porro cupiditate provident voluptatem eaque pariatur, ea at nobis atque modi incidunt! Nobis, libero illo praesentium quae ratione porro, quos harum ipsum reiciendis iure quis temporibus, soluta perferendis.</p>
+</body>
+</html>

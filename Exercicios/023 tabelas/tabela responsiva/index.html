@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Responsiva</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+        th, td{
+            padding: 10px 40px;
+            border: 1px solid black;
+        }
+
+        #container{
+            overflow: auto;
+        }
+
+        .sticky{
+            color: white;
+            background-color: black;
+            position: sticky;
+            left: -1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela Responsiva</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, quia? Repudiandae labore nulla, porro aperiam necessitatibus est eum soluta dignissimos molestias consequatur dolores, nesciunt dolore, cupiditate voluptatem obcaecati qui quidem. Autem dolores architecto omnis repellat, ratione debitis vitae consequuntur accusantium. Labore repellendus molestias harum, velit, vitae animi suscipit, magnam doloribus eius nihil ad nemo doloremque nobis consequuntur excepturi a et minima est laboriosam quis accusantium dolor reiciendis sunt? Sed quam id dolores, nam quas laudantium maxime in enim fugiat quaerat eveniet fuga earum at qui vitae. Sit dolor quos modi labore eum, magnam quisquam incidunt fuga, ratione provident nihil consequuntur tenetur minima? Tenetur, ullam omnis officia nihil, animi fugiat hic doloremque ea alias libero magni aliquid ex praesentium itaque sint suscipit natus iusto repudiandae vitae, esse eos doloribus laudantium. Voluptas, quas sapiente, aspernatur est veritatis ipsa eius nam dolorem itaque, mollitia at error quisquam. Temporibus dignissimos porro eos aperiam nisi!</p>
+
+    <div id="container">
+        <table>
+            <caption>Controle de Materiais</caption>
+            <thead>
+                <th>ab</th>
+                <th>cd</th>
+                <th>fg</th>
+                <th>hi</th>
+                <th>jk</th>
+                <th>lm</th>
+                <th>no</th>
+                <th>pq</th>
+                <th>rs</th>
+                <th>tu</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="sticky">UM</th>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                </tr>
+                <tr>
+                    <th class="sticky">DOIS</th>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                </tr>
+                <tr>
+                    <th class="sticky">TRES</th>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                    <td>..</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
