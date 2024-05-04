@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form04</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Nome completo" minlength="5" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="ie-mail">E-mail:</label>
+                <input type="email" name="e-mail" id="ie-mail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="icel">Celular:</label>
+                <input type="tel" name="cel" id="i-cel" placeholder="(00) 0 0000-0000">
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </fieldset>
+</body>
+</html>

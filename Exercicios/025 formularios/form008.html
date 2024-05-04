@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form08</title>
+    <style>
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post"> 
+        <p>
+            <label for="iestado">Estado:</label>
+            <select name="estado" id="iestado" required>
+
+                <option value="..."  selected>---escolha---</option>
+                <optgroup label="Regiao 1">
+                    <option value="SP">Sao Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+                <optgroup label="Regiao 2">
+                    <option value="MA">Maranhao</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>   
+            </select>
+        </p>
+         <p>
+            <label for="iprof">Profissao:</label>
+             <input type="text" name="prof" id="iprof" list="lista" required>
+
+             <datalist id="lista">
+                <option>Jogador</option>
+                <option>Professor</option>
+                <option>Desenbovedor</option>
+                <option>Vendedor</option>
+             </datalist>
+         </p>
+         <p>
+            <label for="imsg">Menssagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="fale que eu te escuto jovem" maxlength="50"></textarea>
+         </p>
+
+
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>

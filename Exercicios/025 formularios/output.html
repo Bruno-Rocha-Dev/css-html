@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <h1>Soma</h1>
+    <form action="cadastro.php" method="get">
+        <P>
+            <label for="inum1">Numero 1:</label>
+            <input type="number" name="num" id="inum1" min="0" max="10" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </P>
+        <P>
+            <label for="inum2">Numero 2:</label>
+            <input type="number" name="num" id="inum2" min="0" max="10" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </P> 
+        <P>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+         </P>
+        <P>
+            <input type="submit">
+            <input type="reset">
+        </P>
+    </form>
+    <h1>range</h1>
+
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inota">Nota:</label>
+            <input type="range" name="nota" id="inota" max="10" oninput="rnota.innerHTML = Number(inota.value)">
+            <output name="nota" id="rnota">0</output>
+        </p>
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+
+    <h1>Data de Aniverssario</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iano">Quaal ano voce nasceu ?</label>
+            <input type="number" name="ano" id="iano" min="1950" max="2024" oninput="calcIdade()" value="2000">
+        </p>
+        <p>
+            <label for="iidade">Sua idade e:</label>
+            <output name="resultado" id="iidade">24</output>
+        </p>
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
