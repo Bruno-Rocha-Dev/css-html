@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media all{
+    body{
+        background-color: rgb(255, 146, 127);
+    }
+}
+
+@media screen and (orientation: portrait){
+    body{
+        background: #233eff url('imagens/cev-portrait.jpg') center bottom no-repeat fixed;
+        background-size: contain;
+    }
+}
+
+@media screen and (orientation: landscape){
+    body{
+        background: #233eff url('imagens/cev-landscape.jpg') left bottom no-repeat fixed;
+        background-size: contain;
+    }
+}
