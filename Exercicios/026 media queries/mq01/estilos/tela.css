@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* Media Query para telas */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font: 1em arial, helvetica, sans-serif;
+}
+
+header{
+    background-color: #7190AA;
+}
+
+menu{
+    background-color: #444D55;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+li{
+    border-radius: 5px;
+    background-color: #202B33;
+    color: #54B1FF;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+
+li:hover{
+    transform: translate(-1px, -1px);
+}
+
+article{
+    margin: auto;
+    width: 600px;
+    text-align: justify;
+}
