@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mq05</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/outros.css">
+    
+</head>
+<body onresize="mudouTamanho ()">
+    <header>
+        <h1>Menu Hamburguinho</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="opcoes">
+           <li> <a href="#">Home</a> </li>
+           <li> <a href="#">Noticias</a> </li>
+           <li> <a href="#">Musicas</a> </li>
+           <li> <a href="#">Escritores</a> </li>
+           <li> <a href="#">Fale conosco</a> </li>
+        </menu>
+    </header>
+    <main>
+        <section>
+            <h2>Testando Medias Queries</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime debitis vero delectus dolorem sequi asperiores assumenda sed tempora at rem expedita temporibus dolorum laboriosam animi alias sapiente aliquam amet necessitatibus ducimus reiciendis et, odio eaque deleniti odit! Temporibus, quod hic repellendus possimus aspernatur distinctio at optio. Voluptas maxime nihil animi, nisi beatae dolores voluptatum quasi voluptates mollitia sapiente dolor provident sint molestiae aliquid, repellat veritatis quae sed minima. Consequatur architecto distinctio cupiditate. Quibusdam commodi temporibus aperiam ab quod nobis libero mollitia vitae quaerat molestias illo, voluptatem impedit officia accusamus repellendus minima aut explicabo ea facere, illum tenetur exercitationem iusto, asperiores dignissimos? Aliquam corrupti natus minima nemo facilis minus eveniet, nihil quam debitis, dicta laudantium quasi! Ipsum impedit sint porro aliquid voluptates quo aspernatur veniam nihil et saepe voluptatum sunt autem, expedita excepturi, iusto repellendus eos? Expedita ea temporibus quas dicta eum repudiandae, quasi sapiente maxime? Consequuntur officia reiciendis illum, perferendis cupiditate laborum incidunt illo. Porro explicabo recusandae nostrum incidunt dolorem quia dolore possimus voluptas itaque, doloribus obcaecati dicta, reprehenderit error qui maiores. Inventore ex minus adipisci quidem omnis voluptatibus odit tempore atque reiciendis repudiandae autem, in vel. Cum doloremque quam quas aperiam eius, dolore porro numquam iste vero. Recusandae, fugiat reiciendis voluptatibus veritatis ullam odio animi ipsum quasi debitis consectetur ipsa illum, id voluptatem impedit repudiandae eveniet voluptatum adipisci sit quam, totam pariatur enim error porro dignissimos. Aliquam debitis repellat, modi pariatur atque laboriosam quam nesciunt quae magni ad quia odio ipsam repudiandae quidem hic. Totam, possimus? Velit, iste nobis nihil corrupti eveniet assumenda deserunt soluta! Sunt quae, enim corporis earum ipsum accusantium a dolor nemo esse velit. Delectus eum cupiditate, saepe aliquid maxime facilis eveniet aut nam molestiae, dignissimos dicta porro dolor repellendus iure. Asperiores eaque molestias suscipit corrupti harum nemo possimus dignissimos, fugit voluptatibus deleniti distinctio quia mollitia.
+            </p>
+        </section>
+    </main>
+    <script>
+        function mudouTamanho () {
+            if (window.innerWidth >= 600) {
+                opcoes.style.display = 'block'
+            } else {
+                opcoes.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (opcoes.style.display == 'block') {
+                opcoes.style.display = 'none'
+            } else opcoes.style.display = 'block'
+
+        }
+    </script>
+</body>
+</html>

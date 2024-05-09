@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    #burguer{
+        display: none;
+    }
+
+    menu#opcoes{
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    li{
+        font-size: 1.2em;
+        display: inline;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #burguer{
+        display: none;
+    }
+
+    menu#opcoes{
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    li{
+        font-size: 1.2em;
+        display: inline;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    #burguer{
+        display: none;
+    }
+
+    menu#opcoes{
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    li{
+        font-size: 1.2em;
+        display: inline;
+    }
+    
+}
