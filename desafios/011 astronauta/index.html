@@ -7,45 +7,25 @@
     <title>Astronauta</title>
     <style>
         
-        body{
-            
-            background: url('imagens/target001.png') center center no-repeat fixed;
-            background-size: cover;
-            position: relative;
-            
-        }
+    body{
+        height: 90vh;
+        background: url('imagens/espaco.jpg') center center no-repeat fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    img{
 
+        height:70%;
         
+    }
 
-        picture, source, img{
-           
-            
-            
-           
-            background-color: aquamarine;
-           position: relative;
-           top: 50%;
-           left: 50%;
-
-           transform: translate(-115%, 10%);
-
-        }
-
-       
     </style>
 
 </head>
 <body>
-    
-
-    <picture>
-        <source media="(min-width: 510px)" srcset="imagens/astronauta.png" type="image/png">
-        <source media="(min-width: 310px)" srcset="imagens/astronauta-m.png" type="image/png">
-        <img src="imagens/astronauta-p.png" alt="Astronauta">
-    </picture>
-    
-    
-
-    
+        <img src="imagens/astronauta.png" alt="Astronauta">    
 </body>
 </html>
