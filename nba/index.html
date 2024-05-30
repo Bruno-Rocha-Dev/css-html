@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
         html{
             background: url(times/bola.jpg) center center no-repeat fixed;
             background-size: cover;
@@ -12,26 +13,49 @@
         }
 
         body{
+            height: 100dvh;
             margin: 0px;
-            backdrop-filter: blur(5px)
+            backdrop-filter: blur(5px);
+        }
+
+        img.logo-nba{
+            opacity: 50%;
+            width: 100px;
+            display: block;
+            margin: 0px auto -42px auto;
         }
 
         nav{
-           
-            width: 100vw;
-            height: 100vh;
-            display: grid;
-            grid-template-columns: repeat(8, 11.7%);
-            grid-template-rows: auto;
+            height: 100dvh;
+            display: flex;
             justify-content: center;
-            align-content: center;
-            overflow: hidden;
-            margin: auto;
-            
+            align-items: center;
         }
 
-        img{
-            height: 400px;
+        nav > a img{
+            width: 200px;
+            transition: .3s ease-in;
+            transform: scale(90%, 120%);
+            margin: -30px;
+            filter: grayscale(90%);
+        }
+
+        img.times:hover {
+            transform: scale(100%, 100%);
+            outline: 2px solid white;
+            border-radius: 15px;
+            filter: grayscale(0);
+        }
+        
+        a:hover{
+            z-index: 1;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            letter-spacing: 5px;
+            word-spacing: 20px;
         }
 
        
@@ -40,31 +64,35 @@
     </style>
 </head>
 <body>
+    <img class="logo-nba" src="times/logo-nba.jpg" alt="">
     <nav>
         <a href="#">
-            <img src="times/boston-celtics.jpg" alt="">
+            <img class="times" src="times/boston-celtics.jpg" alt="">
         </a>
         <a href="#">
-            <img src="times/bulls.jpg" alt="">
+            <img class="times" src="times/kinics.jpg" alt="">
         </a>
         <a href="#">
-            <img src="times/cleveland.jpg" alt="">
+            <img class="times" src="times/hornets.jpg" alt="">
         </a>
         <a href="#">
-            <img src="times/golden-state.jpg" alt="">
+            <img class="times" src="times/golden-state.jpg" alt="">
+        </a>
+       <a href="#">
+            <img class="times" src="times/cleveland.jpg" alt="">
         </a>
         <a href="#">
-            <img src="times/hornets.jpg" alt="">
+            <img class="times" src="times/lakers.jpg" alt="">
         </a>
         <a href="#">
-            <img src="times/kinics.jpg" alt="">
+            <img class="times" src="times/la-clippersr.jpg" alt="">
         </a>
         <a href="#">
-            <img src="times/la-clippersr.jpg" alt="">
-        </a>
-        <a href="#">
-            <img src="times/lakers.jpg" alt="">
-        </a>
+            <img class="times" src="times/bulls.jpg" alt="">
+        </a> 
     </nav>
+    <section>
+        <h1>Escolha um time e prepare-se para aprender!</h1>
+    </section>
 </body>
 </html>
