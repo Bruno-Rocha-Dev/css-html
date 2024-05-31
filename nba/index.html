@@ -9,6 +9,9 @@
         
         @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
+        *{
+            box-sizing: border-box;
+        }
         html{
             background: url(times/bola.jpg) center center no-repeat fixed;
             background-size: cover;
@@ -37,10 +40,9 @@
         }
 
         nav{
-            background-color: blue;
             display: grid;
             grid-template-columns: repeat(8, 1fr);
-            grid-template-rows: auto;
+            grid-template-rows: 1fr;
             align-items: center;
             gap: 10px;
         }
@@ -56,15 +58,18 @@
         img.times:hover {
             scale: 1.5 ;
             filter: grayscale(0);
-            border: 2px solid white;
+            
         }
         
         a{
-            height: ;
-            background-color: aqua;
+            height: 100%;
+            width: 100%;
             overflow: hidden;
-           
             border-radius: 15px;
+        }
+
+        a:hover{
+            outline: 2px solid white;
         }
         
 
@@ -79,9 +84,11 @@
 
        
 
-        @media screen and (max-width: 770px){
+        @media screen and (max-width: 1200px){
             nav{
-                
+                margin: auto;
+                height: 70vh;
+                width: 70vw;
                 grid-template-columns: repeat(4, 15%);
                 grid-template-rows: auto;
                 justify-content: center;
