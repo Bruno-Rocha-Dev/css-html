@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
-        
-        @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
         html{
             background: url(times/bola.jpg) center center no-repeat fixed;
@@ -16,78 +13,49 @@
         }
 
         body{
-            display: grid;
-            width: 100%;
             height: 100dvh;
             margin: 0px;
-            grid-template-columns: 90vw;
-            grid-template-rows: 100px 1fr 150px;
             backdrop-filter: blur(5px);
-            justify-content: center;
         }
 
-        .logo-nba{
-            text-align: center;  
-        }
-
-        .logo-nba img{
-            height: 50px;
-            margin-top: 15px;
-            opacity: 60%;
+        img.logo-nba{
+            opacity: 50%;
+            width: 100px;
+            display: block;
+            margin: 0px auto -42px auto;
         }
 
         nav{
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
             align-items: center;
-            gap: 10px;
-            
         }
 
-        .times{
-            width: 100%;
-            height: 100%;
-            transition: .5s ease  ;
+        nav > a img{
+            width: 200px;
+            transition: .3s ease-in;
+            transform: scale(90%, 120%);
+            margin: -30px;
             filter: grayscale(90%);
         }
 
         img.times:hover {
-            scale: 1.5 ;
+            transform: scale(100%, 100%);
+            outline: 2px solid white;
+            border-radius: 15px;
             filter: grayscale(0);
         }
         
-        a{
-            overflow: hidden;
-            border-radius: 15px;
-        }
         a:hover{
-            border: 2px solid white;
+            z-index: 1;
         }
 
-     
         h1{
             text-align: center;
-            color: rgb(255, 255, 255);
+            color: white;
             letter-spacing: 5px;
             word-spacing: 20px;
-            font: normal 600 1.5em "Rock Salt", cursive;
-        }
-
-        @media screen and (max-width: 900px){
-            nav{
-                background-color: blue;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: ;
-            }
-
-            .times{
-            
-            
-
-        }
-
-
         }
 
        
@@ -96,7 +64,7 @@
     </style>
 </head>
 <body>
-    <div class="logo-nba"><img  src="times/logo-nba.jpg" alt=""></div>
+    <img class="logo-nba" src="times/logo-nba.jpg" alt="">
     <nav>
         <a href="#">
             <img class="times" src="times/boston-celtics.jpg" alt="">
@@ -120,7 +88,7 @@
             <img class="times" src="times/la-clippersr.jpg" alt="">
         </a>
         <a href="#">
-            <img class="times" src="times/bulls.jpg" alt=""> 
+            <img class="times" src="times/bulls.jpg" alt="">
         </a> 
     </nav>
     <section>
