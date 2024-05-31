@@ -21,7 +21,7 @@
             height: 100dvh;
             margin: 0px;
             grid-template-columns: 90vw;
-            grid-template-rows: 100px 1fr 150px;
+            grid-template-rows: 100px 1fr 1fr;
             backdrop-filter: blur(5px);
             justify-content: center;
         }
@@ -37,12 +37,12 @@
         }
 
         nav{
+            background-color: blue;
             display: grid;
             grid-template-columns: repeat(8, 1fr);
-            
+            grid-template-rows: auto;
             align-items: center;
             gap: 10px;
-            
         }
 
         .times{
@@ -50,20 +50,23 @@
             height: 100%;
             transition: .5s ease  ;
             filter: grayscale(90%);
+            
         }
 
         img.times:hover {
             scale: 1.5 ;
             filter: grayscale(0);
+            border: 2px solid white;
         }
         
         a{
+            height: ;
+            background-color: aqua;
             overflow: hidden;
+           
             border-radius: 15px;
         }
-        a:hover{
-            border: 2px solid white;
-        }
+        
 
      
         h1{
@@ -74,17 +77,21 @@
             font: normal 600 1.5em "Rock Salt", cursive;
         }
 
-        @media screen and (max-width: 900px){
+       
+
+        @media screen and (max-width: 770px){
             nav{
-                background-color: blue;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: ;
+                
+                grid-template-columns: repeat(4, 15%);
+                grid-template-rows: auto;
+                justify-content: center;
+                align-content: center;
+                gap: 25px;
             }
 
-            .times{
+            h1{
             
-            
-
+            font: normal 600 1em "Rock Salt", cursive;
         }
 
 
